@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    }
+
+#img0{
+    width: 30%;
+
+}
+
+#img1{
+    width: 40%;
+    }
+
+#img2{
+    width: 30%;
+}
+
+#img3{
+    width: 30%;
+}
+
+#img4{
+    width: 40%;
+}
+
+#img6{
+    width: 60%;
+}
+
+.texto{
+    text-align: center;
+    padding: 5%;
+}
+
+.texto2{
+    text-align: justify;
+    padding: 2%;
+}
+
+body{
+    height: 350vh;
+}
+
+header{
+    height: 10%;
+    background-color: rgb(255, 255, 255);
+}
+
+main{
+    height: 70%;
+    background-color: rgb(227, 159, 228);
+
+}
+
+article{
+    background-color: aqua;
+
+}
+
+footer{
+    height: 20%;
+    background-color: rgb(152, 68, 183);
+}
+
+

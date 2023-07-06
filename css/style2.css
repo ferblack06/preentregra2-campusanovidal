@@ -1,0 +1,520 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    }
+
+    h1 {
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        color:rgb(131, 19, 211);
+        font-weight: 600;
+    }
+
+    h2 {
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        color: rgb(138, 8, 138);
+
+    }
+    
+     
+    p{
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        text-align: justify;
+    }
+
+    body{
+        height: 200vh;
+        display: grid;
+        grid-template-rows: 0.25fr repeat(2,1fr) 0.5fr;
+        grid-template-columns:0.1fr repeat(2,1fr) ;
+        grid-template-areas: 
+        "header header header"
+        "nav main main"
+        "nav main main"
+        "footer footer footer"
+        ;
+    }
+
+    header{
+        background-color: rgb(195, 147, 240);
+        grid-area: header;
+    
+    }
+
+    .header{
+        display: grid;
+        grid-template-rows:auto ;
+        grid-template-columns: 0.25fr 1fr;
+        grid-template-areas:
+        "logo navv";
+    }
+
+
+        
+
+    #logo{
+        grid-area: logo;
+        background-color: rgb(232, 152, 225);
+        padding: 3%;
+        
+    }
+
+    #logo img{
+        width: 40%;
+       
+    }
+
+    #navv {
+        grid-area: navv;
+        background-color: rgb(232, 152, 225);
+        padding: 5%;
+    }
+
+    .header nav ul li{
+        list-style-type: none;
+    }
+
+    .header nav ul li a{
+        text-decoration: none;
+        margin: 0 1rem;
+
+    }
+
+    .header nav ul{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+    }
+
+   
+
+    nav{
+        background-color: rgb(231, 181, 241);
+        grid-area: nav;
+    }
+
+    main{
+        grid-area: main;
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: 1fr 0.6fr;
+        grid-template-areas: 
+        "section1 aside"
+        "section2 aside";
+
+    }
+
+    #section1{
+        background-color: rgb(231, 181, 241);
+        grid-area: section1;
+        
+
+    }
+
+    #section1 div{
+        background-color: rgb(176, 126, 198);
+        border: 1px solid rgb(119, 8, 136);
+        font-size: 2rem;
+        color: bisque;
+        text-align: center;
+        margin: 3%;
+        padding: 3%;
+
+    }
+
+    #section2{
+        background-color: rgb(231, 181, 241);
+        grid-area: section2;
+    }
+
+    #section2 div{
+        background-color: rgb(176, 126, 198);
+        border: 1px solid rgb(119, 8, 136);
+        font-size: 2rem;
+        color: bisque;
+        text-align: center;
+        margin: 3%;
+        padding: 3%;
+
+    }
+
+
+    aside{
+        background-color: rgb(231, 181, 241);
+        grid-area: aside;
+        text-align: center;
+        margin: 0;
+        padding: 3%;
+        color: rgb(176, 126, 198);
+
+    }
+
+    #footer1{
+        background-color: rgb(232, 152, 225);
+        grid-area: footer1;
+    
+    }
+
+    #footer1 img{
+        width: 40%;
+       
+    }
+
+    #footer2{
+        background-color: rgb(232, 152, 225);
+        grid-area: footer2;
+    }
+
+    footer{
+        background-color: rgb(232, 152, 225);
+        grid-area: footer;
+        display: grid;
+        grid-template-rows: 0.20fr repeat(2,1fr) 0.20fr;
+        grid-template-columns: repeat(3, 1fr) 0.20fr;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas: 
+        ". . . ."
+        "footer1 . footer2 ."
+        "footer1 . footer2 ."
+        ". . . .";
+
+    }
+
+
+@media screen and (max-width: 768px) {
+
+    body{
+        
+        grid-template-rows:  repeat(4,1fr) ;
+        grid-template-columns: 1fr ;
+        grid-template-areas: 
+        "header"
+        "nav "
+        "main"
+        "footer"
+        ;
+    }
+
+    header{
+        background-color: rgb(195, 147, 240);
+        grid-area: header;
+    
+    }
+
+    .header{
+        display: grid;
+        grid-template-rows:auto ;
+        grid-template-columns: 0.25fr 1fr;
+        grid-template-areas:
+        "logo navv";
+    }
+
+
+
+
+    #logo{
+        grid-area: logo;
+        background-color: rgb(232, 152, 225);
+        padding: 3%;
+        
+    }
+
+    #logo img{
+        width: 40%;
+       
+    }
+
+    #navv {
+        grid-area: navv;
+        background-color: rgb(232, 152, 225);
+        padding: 5%;
+    }
+
+    .header nav ul li{
+        list-style-type: none;
+    }
+
+    .header nav ul li a{
+        text-decoration: none;
+        margin: 0 1rem;
+
+    }
+
+    .header nav ul{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+    }
+
+   
+
+    nav{
+        background-color: rgb(231, 181, 241);
+        grid-area: nav;
+    }
+
+    main{
+        grid-area: main;
+        grid-template-rows: repeat(2, 0.5fr) 1fr;
+        grid-template-columns: 1fr ;
+        grid-template-areas: 
+        "section1 "
+        "section2 "
+        "aside";
+
+    }
+
+    #section1{
+        background-color: rgb(231, 181, 241);
+        grid-area: section1;
+        
+
+    }
+
+    #section1 div{
+        background-color: rgb(176, 126, 198);
+        border: 1px solid rgb(119, 8, 136);
+        font-size: 2rem;
+        color: bisque;
+        text-align: center;
+        margin: 3%;
+        padding: 3%;
+
+    }
+
+
+
+    #section2{
+        background-color: rgb(231, 181, 241);
+        grid-area: section2;
+    }
+
+    #section2 div{
+        background-color: rgb(176, 126, 198);
+        border: 1px solid rgb(119, 8, 136);
+        font-size: 2rem;
+        color: bisque;
+        text-align: center;
+        margin: 3%;
+        padding: 3%;
+
+    }
+
+
+    aside{
+        background-color: rgb(231, 181, 241);
+        grid-area: aside;
+        text-align: center;
+        margin: 0;
+        padding: 3%;
+
+    }
+
+    #footer1{
+        background-color: rgb(232, 152, 225);
+        grid-area: footer1;
+    
+    }
+
+    #footer1 img{
+        width: 40%;
+       
+    }
+
+    #footer2{
+        background-color: rgb(232, 152, 225);
+        grid-area: footer2;
+    }
+
+    footer{
+        background-color: rgb(232, 152, 225);
+        grid-area: footer;
+        display: grid;
+        grid-template-rows: 0.20fr 1fr 0.20fr 1fr 0.20fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas: 
+        "."
+        "footer1"
+        "."
+        "footer2"
+        ".";
+
+
+}
+}
+
+@media screen and (max-width: 480px) {
+    body{
+        
+        grid-template-rows:  repeat(4,1fr) ;
+        grid-template-columns: 1fr ;
+        grid-template-areas: 
+        "header"
+        "nav "
+        "main"
+        "footer"
+        ;
+    }
+
+    header{
+        background-color: rgb(195, 147, 240);
+        grid-area: header;
+    
+    }
+
+    .header{
+        display: grid;
+        grid-template-rows:auto ;
+        grid-template-columns: 0.25fr 1fr;
+        grid-template-areas:
+        "logo navv";
+    }
+
+
+        
+
+    #logo{
+        grid-area: logo;
+        background-color: rgb(232, 152, 225);
+        padding: 3%;
+        
+    }
+
+    #logo img{
+        width: 40%;
+       
+    }
+
+    #navv {
+        grid-area: navv;
+        background-color: rgb(232, 152, 225);
+        padding: 5%;
+    }
+
+    .header nav ul li{
+        list-style-type: none;
+    }
+
+    .header nav ul li a{
+        text-decoration: none;
+        margin: 0 1rem;
+
+    }
+
+    .header nav ul{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+    }
+
+   
+
+    nav{
+        background-color: rgb(231, 181, 241);
+        grid-area: nav;
+    }
+
+    main{
+        grid-area: main;
+    
+        grid-template-rows: 0.5fr 0.5fr 1fr;
+        grid-template-columns: 1fr ;
+        grid-template-areas: 
+        "section1 "
+        "section2 "
+        "aside";
+
+    }
+
+    #section1{
+        background-color: rgb(231, 181, 241);
+        grid-area: section1;
+       
+
+    }
+
+    #section1 div{
+        background-color: rgb(176, 126, 198);
+        border: 1px solid rgb(119, 8, 136);
+        font-size: 2rem;
+        color: bisque;
+        text-align: center;
+        margin: 3%;
+        padding: 3%;
+
+    }
+
+
+
+    #section2{
+        background-color: rgb(231, 181, 241);
+        grid-area: section2;
+    }
+
+    #section2 div{
+        background-color: rgb(176, 126, 198);
+        border: 1px solid rgb(119, 8, 136);
+        font-size: 2rem;
+        color: bisque;
+        text-align: center;
+        margin: 3%;
+        padding: 3%;
+
+    }
+
+
+    aside{
+        background-color: rgb(231, 181, 241);
+        grid-area: aside;
+        text-align: center;
+        margin: 0;
+        padding: 3%;
+
+    }
+
+    #footer1{
+        background-color: rgb(232, 152, 225);
+        grid-area: footer1;
+    
+    }
+
+    #footer1 img{
+        width: 40%;
+       
+    }
+
+    #footer2{
+        background-color: rgb(232, 152, 225);
+        grid-area: footer2;
+    }
+
+    footer{
+        background-color: rgb(232, 152, 225);
+        grid-area: footer;
+        display: grid;
+        grid-template-rows: 0.20fr 1fr 0.20fr 1fr 0.20fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas: 
+        "."
+        "footer1"
+        "."
+        "footer2"
+        ".";
+
+
+}
+}

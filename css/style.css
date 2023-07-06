@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    }
+    
+    body{
+        height: 200vh;
+    }
+
+    h1 {
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        color:rgb(131, 19, 211);
+        font-weight: 600;
+    }
+
+    h2 {
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        color: rgb(138, 8, 138);
+
+    }
+    
+     
+    p{
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        text-align: justify;
+    }
+
+    
+    
+    header{
+        background-color: bisque;
+        height: 10%;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    #logo{
+        background-color: bisque;
+        flex-grow: 1;
+    
+    }
+    
+    #img0{
+        width: 30%;
+    }
+    #nav_header{
+        background-color: bisque;
+        flex-grow: 4;
+    
+    }
+    
+    #menu_header{
+        background-color: bisque;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    
+    #menu_header li{
+        list-style-type: none;
+        background-color: rgb(240, 161, 229);
+        padding:20px;
+       
+        
+    }
+    
+    #menu_header li a{
+        text-decoration: none;
+    }
+    
+    main{
+        height: 80%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: stretch;
+       
+       
+
+    }
+    
+    nav{
+        background-color:rgb(237, 170, 237);
+        flex-grow: 1;
+        margin: 0;
+        padding:2%;
+        text-align: center;
+        
+    
+    }
+
+
+
+    section{
+        background-color: rgb(226, 43, 128);
+        flex-grow: 2;
+        margin: 0;
+        padding:2%;
+        text-align: center;
+    
+    }
+
+
+   
+    aside{
+        background-color: rgb(43, 226, 55);
+        flex-grow: 1;
+        margin: 0;
+        padding: 2%;
+        text-align: center;
+        
+    }
+
+    
+    footer{
+        background-color: rgb(226, 43, 128);
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    
+    }
+
+    #footer1{
+        flex-grow: 1;
+       
+
+    }
+
+    #footer2{
+        flex-grow: 1;
+
+    }
+
+    .img{
+        width: 30%;
+    }
